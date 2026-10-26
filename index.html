@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个网站</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+      background: #f4f7fb;
+      color: #222;
+    }
+    .card {
+      max-width: 500px;
+      margin: auto;
+      padding: 40px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px #00000010;
+    }
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>你好，世界！</h1>
+    <p>这是我的第一个个人网站。</p>
+    <button onclick="sayHello()">点击试试</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function sayHello() {
+      document.getElementById("result").textContent =
+        "网页运行成功！";
+    }
+  </script>
+</body>
+</html>
